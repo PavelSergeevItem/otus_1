@@ -41,7 +41,7 @@
 Получил сообщение: You are now logged in.
 Опубликовал мой образ при помощи команды ``vagrant cloud publish --release <user_account>/centos8-kernel5 1.0 virtualbox centos-8-kernel-5-x86_64-Minimal.box``.
 Где <user_account> - мой аккаунт в вагрант клауд.
-centos8-kernel5 1.0 virtualbox centos-8-kernel-5-x86_64-Minimal.box доступен по ссылки [https://app.vagrantup.com/pavelsergeev/boxes/centos8-kernel5](url), доступен по запросу.
+centos8-kernel5 1.0 virtualbox centos-8-kernel-5-x86_64-Minimal.box доступен по ссылки https://app.vagrantup.com/pavelsergeev/boxes/centos8-kernel5, доступен по запросу.
 
 
 Автор работы доступен по адресу ps@item.expert или в телеграмм [https://t.me/ch33zass.](url)
