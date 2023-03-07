@@ -9,9 +9,7 @@
 Находясь в папке с проектом vagrant создал вагрант файл командо vagrant init
 В вагрант файл внес конфиг
 
-# Описываем Виртуальные машины
 MACHINES = {
-  # Указываем имя ВМ "kernel update"
   :"kernel-update" => {
               :box_name => "centos/stream8",
               :box_version => "20210210.0",
