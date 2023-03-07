@@ -2,7 +2,7 @@
 **1. Создание стенда для лаборатоной работы.**
 
 Системный блок: mb — ga-h61m-ds2, cpu — i52500, ram — 8GBram, storage — 120GB ssd, os — ubuntu 22.02.
-Установленны програмы из методички, vagrant, packer, virtualbox.
+Установил програмы из методички, vagrant, packer, virtualbox.
 Зарегистрировался на гитхабе, вагрант облаке.
 Настроил клиент впн.
 
@@ -10,7 +10,7 @@
 
 Находясь в папке с проектом vagrant создал вагрант файл командой ``vagrant init``, текс файла взлял из методички.
 Далее запустил виртуальную машину командой ``Vagrant up``.
-Подключившись по ssh, использую команду ``vagrant ssh``.
+Подключился по ssh, использую команду ``vagrant ssh``.
 Обновил ядро, используя команды.
 ``sudo yum install -y https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm``.
 ``sudo yum --enablerepo elrepo-kernel install kernel-ml -y``.
