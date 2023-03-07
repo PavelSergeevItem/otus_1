@@ -20,13 +20,13 @@
 
 **3. Создание образа системы.**
 
-В папке vagrant создал папку packer используя команду ``mkdir packer``.
+В папке vagrant создал папку packer, используя команду ``mkdir packer``.
 В ней создал файл centos.json, используя инструкцию в методичке написал код. Данный файл несет шаги создания образа.  Centos.json доступен по ссылки [https://github.com/PavelSergeevItem/otus_1].
-Далее в папке packer создал папку http. В ней созал конфиг файл ks.cfg. ks.cfg — это файл автоматической конфигурации ОС. Файл ks.cfg доступен по ссылки [https://github.com/PavelSergeevItem/otus_1].
-Далее в папке packer создал папку script, где разместил два скрипта. stage-1-kernel-update.sh будут содаржаться команды по обновлению ядра и stage-2-clean.sh просто очистит ненужные файлы из нашей ОС и добавит ssh-ключ пользователя vagrant. Оба файла доступны [https://github.com/PavelSergeevItem/otus_1].
+Далее в папке packer создал папку http. В ней создал конфиг файл ks.cfg. ks.cfg — это файл автоматической конфигурации ОС. Файл ks.cfg доступен по ссылки [https://github.com/PavelSergeevItem/otus_1].
+Далее в папке packer создал папку scripts, где разместил два скрипта: stage-1-kernel-update.sh содаржит команды по обновлению ядра и stage-2-clean.sh, который очистит ненужные файлы из нашей ОС и добавит ssh-ключ пользователя vagrant. Оба файла доступны [https://github.com/PavelSergeevItem/otus_1].
 Далее находясь в папке packer создал образ системы, при помощи команды ``packer build centos.json``.
 После успешного создания .box файла импортировал его в vagrant командой ``vagrant box add centos8-kernel5 centos-8-kernel-5-x86_64-Minimal.box``
-Перейдя в папку vagrrant проверил наличие образа командой vagrant box list.
+Перейдя в папку vagrrant проверил наличие образа командой ``vagrant box list``.
 Создал на основе образа vagrantfile командой ``vagrant init centos8-kernel5``, файл доступен по ссылки [https://github.com/PavelSergeevItem/otus_1].
 Запустил вм: ``vagrant up``.
 Подключился к ней: ``vagrant ssh``.
