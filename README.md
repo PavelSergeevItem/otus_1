@@ -36,7 +36,7 @@
 
 **4. Загрузка образа в Vagrant cloud**
 
-Находясь в каталоге packer залогинился в vagrant cloud командой: ``vagrant cloud auth login``
+Находясь в каталоге packer залогинился в vagrant cloud командой: ``vagrant cloud auth login``.
 Далее последовательно указал: мой логин и пароль, далее мой токен.
 Получил сообщение: You are now logged in.
 Опубликовал мой образ при помощи команды ``vagrant cloud publish --release <user_account>/centos8-kernel5 1.0 virtualbox centos-8-kernel-5-x86_64-Minimal.box``.
